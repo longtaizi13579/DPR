@@ -1,0 +1,6 @@
+python dense_retriever.py \
+	model_file=/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/outputs/2023-05-05/10-53-35/dpr_biencoder.19 \
+	qa_dataset=nq_dev \
+	ctx_datatsets=[dpr_wiki] \
+	encoded_ctx_files=[\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_*\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_1\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_2\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_3\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_4\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_5\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_6\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_7\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_8\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_9\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_10\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_11\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_12\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_13\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_14\",\"/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result/wiki_15\"] \
+	out_file=/mnt/workspace/yeqin/huihuan/facebook_dpr/DPR/result

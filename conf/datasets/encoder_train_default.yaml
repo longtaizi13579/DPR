@@ -2,7 +2,7 @@
 
 nq_train:
   _target_: dpr.data.biencoder_data.JsonQADataset
-  file: data.retriever.nq-train
+  file: /root/data/huihuan/facebook_dpr/DPR/data/train_ce_0.json/train_ce_0.json.nsieve
 
 nq_train_hn1:
   _target_: dpr.data.biencoder_data.JsonQADataset
@@ -10,7 +10,7 @@ nq_train_hn1:
 
 nq_dev:
   _target_: dpr.data.biencoder_data.JsonQADataset
-  file: data.retriever.nq-dev
+  file: /root/data/huihuan/facebook_dpr/DPR/dpr/downloads/data/retriever/nq-dev.json
 
 trivia_train:
   _target_: dpr.data.biencoder_data.JsonQADataset

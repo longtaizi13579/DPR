@@ -2,12 +2,12 @@
 # configuration groups
 defaults:
   - encoder: hf_bert
-  - train: biencoder_default
+  - train: biencoder_local
   - datasets: encoder_train_default
 
-train_datasets:
-dev_datasets:
-output_dir:
+train_datasets: [nq_train]
+dev_datasets: [nq_dev]
+output_dir: .
 train_sampling_rates:
 loss_scale_factors:
 

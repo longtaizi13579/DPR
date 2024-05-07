@@ -208,6 +208,7 @@ class HFBertEncoder(BertModel):
         cls, cfg_name: str, projection_dim: int = 0, dropout: float = 0.1, pretrained: bool = True, **kwargs
     ) -> BertModel:
         logger.info("Initializing HF BERT Encoder. cfg_name=%s", cfg_name)
+        # cfg = BertConfig.from_pretrained('/root/data/huihuan/model/bert_base_uncased')
         cfg = BertConfig.from_pretrained(cfg_name if cfg_name else "bert-base-uncased")
         if dropout != 0:
             cfg.attention_probs_dropout_prob = dropout

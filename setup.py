@@ -27,7 +27,6 @@ setup(
         "setuptools>=18.0",
     ],
     install_requires=[
-        "faiss-cpu>=1.6.1",
         "filelock",
         "numpy",
         "regex",
@@ -35,7 +34,6 @@ setup(
         "transformers>=4.3",
         "tqdm>=4.27",
         "wget",
-        "spacy>=2.1.8",
         "hydra-core>=1.0.0",
         "omegaconf>=2.0.1",
         "jsonlines",

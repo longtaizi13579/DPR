@@ -8,7 +8,6 @@
 """
  Command line tool to get dense results and validate them
 """
-
 import glob
 import json
 import logging
@@ -72,8 +71,8 @@ def generate_question_vectors(
                 batch_tensors = [tensorizer.text_to_tensor(q) for q in batch_questions]
 
             # TODO: this only works for Wav2vec pipeline but will crash the regular text pipeline
-            max_vector_len = max(q_t.size(1) for q_t in batch_tensors)
-            min_vector_len = min(q_t.size(1) for q_t in batch_tensors)
+            max_vector_len = max(q_t.size(0) for q_t in batch_tensors)
+            min_vector_len = min(q_t.size(0) for q_t in batch_tensors)
 
             if max_vector_len != min_vector_len:
                 # TODO: _pad_to_len move to utils
@@ -284,6 +283,7 @@ class DenseRPCRetriever(DenseRetriever):
 
             logger.info("index search time: %f sec.", time.time() - time0)
             results.extend([(meta[q], scores[q]) for q in range(len(scores))])
+            print()
         return results
 
     def _wait_index_ready(self, index_id: str):

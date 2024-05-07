@@ -1,0 +1,8 @@
+--2023-04-29 20:17:03--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/84940268/97a07300-e132-11e9-94b8-6dad3abc8ade?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.108.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.111.133|:443... failed: Connection timed out.
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.109.133|:443... failed: Connection timed out.
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2023-04-29 20:18:08 ERROR 400: Bad Request.
+
